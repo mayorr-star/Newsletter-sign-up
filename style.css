@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Roboto:ital,wght@0,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: hsl(234, 29%, 20%);
+}
+.info {
+  margin-top: 30px;
+}
+.info h1 {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 15px;
+}
+.info p {
+  color: hsl(235, 18%, 26%);
+  font-size: 12px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  color: hsl(235, 18%, 26%);
+  gap: 10px;
+}
+span {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+}
+span img {
+  width: 5%;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 3px;
+  color: hsl(234, 29%, 20%);
+}
+input[type="email"] {
+  border: 1px solid hsl(231, 7%, 60%);
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+input[type="email"]:focus {
+  cursor: pointer;
+  border: 1px solid hsl(234, 29%, 20%);
+}
+::placeholder {
+  font-size: 10px;
+  color: hsl(231, 7%, 60%);
+}
+.submit {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 9px;
+  width: 80%;
+}
+.news-container {
+  padding: 10px;
+}
+.success-page {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 30px;
+  margin: 70px auto;
+  padding: 30px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.section-1{
+ display: none;
+}
+.success img {
+  width: 15%;
+  margin-bottom: 20px;
+}
+.success h1 {
+  margin-bottom: 15px;
+}
+.success p {
+  color: hsl(231, 7%, 60%);
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.success p span {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  width: 2000px;
+}
+.dismiss {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 9px;
+  width: 80%;
+}
+button:active {
+  background-color: hsl(4, 100%, 67%);
+}
+.labels small {
+  font-size: 10px;
+  display: none;
+}
+.labels {
+  display: flex;
+  gap: 50px;
+}
+.form.error small {
+  display: block;
+  color: hsl(4, 100%, 67%);
+}
+.form.error input[type="email"] {
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+.section-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+  margin: 70px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.img-container {
+  width: 50%;
+}
+.img-container img {
+  width: 100%;
+}
+
+/* FOR MOBILE */
+@media screen and (max-width: 375px) {
+  .section-1 {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+  .news-letter {
+    margin-top: 220px;
+  }
+  .news {
+    display: block;
+    position: relative;
+  }
+  .info {
+    width: 100%;
+  }
+  ul {
+    gap: 15px;
+  }
+  span {
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    line-height: 20px;
+  }
+  form {
+    margin-top: 30px;
+  }
+  label {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  input[type="email"] {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .submit, .dismiss {
+    width: 90%;
+    padding: 15px 0 15px 0;
+    font-size: 12px;
+  }
+  ::placeholder {
+    font-size: 12px;
+  }
+  .img-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  .news-container{
+    padding-left: 30px;
+  }
+  .info h1{
+    font-size: 32px;
+  }
+  .success-page {
+    width: 100%;
+    border-radius: 0;
+  }
+  .success img {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  .success h1 {
+    margin-bottom: 15px;
+    width: 60%;
+    font-size: 32px;
+  }
+  .success p {
+    color: hsl(235, 18%, 26%);
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .success p span {
+    color: hsl(235, 18%, 26%);
+    font-weight: 700;
+  }
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+}
